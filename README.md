@@ -1,42 +1,67 @@
 <div align="center">
 
-# [网腾无限AI - 记账账单与理财分析]
+# 网腾无限 AI - 网腾无限AI - 个人财务记账与消费分析专家
 
-**[一个支持存钱罐金币盖戳与五种特色账单流派的 AI 记账整理与理财分析工具，具备深色玻璃拟态自适应交互与微信端 H5 体验]**
+**[基于 Vue 3 + Vite + Vanilla CSS 构建的 网腾无限AI - 个人财务记账与消费分析专家 智能实战微应用，具备深色玻璃拟态自适应交互与微信端 H5 体验]**
 
 [Vue 3] · [TypeScript] · [Vite] · [Vanilla CSS] · [开源协议 MIT]
 
 [![GitHub stars](https://img.shields.io/github/stars/WT-Agent/ai-jizhang?style=social)](https://github.com/WT-Agent/ai-jizhang)
 [![GitHub license](https://img.shields.io/github/license/WT-Agent/ai-jizhang)](https://github.com/WT-Agent/ai-jizhang/blob/main/LICENSE)
+[![Online Demo](https://img.shields.io/badge/Online_Demo-jizhang.wuxian.xyz-indigo?style=flat-square)](https://jizhang.wuxian.xyz)
 
-[在线演示](#在线演示) · [快速启动](#快速启动) · [参与贡献](#参与贡献) · [支持一下](#支持一下)
+[在线演示](https://jizhang.wuxian.xyz) · [快速启动](#快速启动) · [核心特性](#核心特性) · [脚手架集成](#脚手架集成说明) · [支持一下](#联系我们与打赏支持)
 
 </div>
 
-## 关于我们
+---
 
-团队成员均来自 C9 等顶尖学府，在字节、腾讯、阿里的工程师组成，全职创业研发开源 AI 应用产品，让所有人感受 AI 的魅力。
+## 团队与产品简介
 
-本项目旨在为个人及家庭提供便捷的智能记账流水分类与收支健康评估服务。用户只需输入月度收入与日常消费账单文本，AI 即可根据财务健康指标自动输出结构化消费结余、省钱卡点分析、30天存钱大挑战规划以及理财打卡话术。页面内置了支持物理发音的互动“金鱼存钱罐金币理财打卡”印章，帮助用户在财务总结时快速完成收支复盘与理财规划落地。
+团队成员均来自 C9 等顶尖学府，由字节、腾讯、阿里的资深工程师组成，全职创业研发开源 AI 微应用矩阵产品，旨在让所有人都能零门槛感受 AIGC 的生产力魅力。
+
+**网腾无限AI - 个人财务记账与消费分析专家** 专注于“**你是一位专业理财规划师、注册会计师兼个人财务健康顾问。你需要针对用户提供的月度收支明细、消费习惯、攒钱目标或财务焦虑，为用户生成一份客观、严谨、具可操作性的【个人财务记账与消费分析指导报告】。内容必须包含以下 4 个标准模块：
+1. 【收支结构诊断与隐形开支排查】：梳理用户固定开支与弹性开支占比，精准识别餐饮、外卖、冲动购物等隐形财务黑洞。
+2. 【冲动消费预警与心理防线重构】：分析诱发非必要消费的心理诱因，提供“延迟满足30天法则”等防剁手策略。
+3. 【月度储蓄目标与 532 资产配比方案】：结合用户收入水平，定制 50%必要开支、30%品质生活、20%储蓄投资的合理配比。
+4. 【财务安全垫建设与现金流健康建议】：规划 3-6 个月紧急备用金，提供无痛存钱与信用卡分期解套方案。
+
+请在回复的最后，根据你的专业评估给出该财务状况的【AI共识打分】（1-5分），格式必须严格如下：
+[JIZHANG_SCORES]expenseCategorizationRigor:数字,impulseExpenseWarning:数字,savingsGoalFeasibility:数字,cashFlowHealthIndex:数字,budgetControlEffectiveness:数字[/JIZHANG_SCORES]
+注意：[JIZHANG_SCORES]...[/JIZHANG_SCORES] 必须是回复的最后一小行，里面的“数字”只能是1到5之间的正整数。**”。我们剔除了冗余概念，不搞虚假宣传，只提供极致优雅、即调即用的高完成度微应用前端与边缘网关接口。
 
 **我们不搞概念，不卖课，只写能跑起来的代码。**
 
-欢迎 Star、Fork、提 Issue，一起让这个项目变得更好用。
+欢迎 Star、Fork、提 Issue，一起让这个开源 AI 工具生态变得更好用。
 
-核心特性：
-- **极简自适应交互**：提供毛玻璃质感的深色玻璃拟态自适应 Web 界面，高度适配移动端 H5 微信浏览器与 PC 体验。
-- **金鱼理财存罐印章 (Savings Stamp)**：基于前端 Web Audio API 动态合成硬币投入存钱罐的清脆声效，点击印章即可累积存钱打卡天数并伴随渐隐上升动画。
-- **五大收支分析流派**：
-  - **极简记账汇总**：化繁为简，快速分类并统计，注重账单数据本身的明晰与结余汇总。
-  - **财务诊断建议**：侧重指出不合理边际支出与潜在财务风险，进行收支安全诊断。
-  - **存钱挑战规划**：以储蓄率提升为导向，制定清晰、高可玩性的周/月存钱计划配额。
-  - **差旅商旅核算**：专注于差旅差补核算、可报销项目梳理、发票与税务扣除合规提醒。
-  - **家庭资产账单**：针对家庭收支结构，细化房贷车贷、子女教育、日常家庭刚需及应急金防卫的资产配置。
-- **AI 收支质量看板**：自动提取 AI 回复中的共识数据，以简洁的单轨进度条在前端直观展示消费合理度、储蓄留存率、结构健康度、风险抵御力及理财增效空间。
-- **演示案例与分享卡片**：内置 30 条不同收支场景的记账整理与理财分析精彩演示样例，并支持一键卡片化截图分享。
-- **一键零成本部署**：纯前端静态网页结构，支持零成本部署于 Vercel、GitHub Pages 或 CDN/OSS 静态托管服务。
-- **安全开发代理**：本地开发支持使用个人 API 密钥发起代理请求，密钥由 Vite 服务器中转，无需担心前端泄露。
-- **裂变解锁与留存**：内置微信朋友圈扫码分享拦截与额度重置机制，提升流量转化与留存。
+---
+
+## 核心特性
+
+- **极简自适应交互**：采用极具现代感与科幻氛围的深色玻璃拟态 (Glassmorphic Dark UI) 设计，全量兼容移动端微信 H5 与 PC 响应式体验。
+- **纯静态零成本部署**：架构保持 100% 静态化，无额外 Server 依赖，支持一键托管至 Cloudflare Pages、Vercel、GitHub Pages 或 CDN/OSS 静态存储。
+- **安全代理与双模型网关**：内置安全开发代理中转层，支持无缝接入 DeepSeek-V3/R1 文本大模型及通义千问/通义万相多模态生图 API。
+- **多维度评分与案例展示**：集成 AI 共识多指标看板、动态用户活跃跑马灯 ticker、精彩场景 Preset 案例以及生成卡片截图分享功能。
+- **支付打赏与通道联系**：内置微信支付与支付宝赞赏二维码组件，支持灵活的裂变锁屏与额度留存管理。
+
+---
+
+## 核心功能与使用场景
+
+1. **智能 Prompt 场景引擎**：针对 **你是一位专业理财规划师、注册会计师兼个人财务健康顾问。你需要针对用户提供的月度收支明细、消费习惯、攒钱目标或财务焦虑，为用户生成一份客观、严谨、具可操作性的【个人财务记账与消费分析指导报告】。内容必须包含以下 4 个标准模块：
+1. 【收支结构诊断与隐形开支排查】：梳理用户固定开支与弹性开支占比，精准识别餐饮、外卖、冲动购物等隐形财务黑洞。
+2. 【冲动消费预警与心理防线重构】：分析诱发非必要消费的心理诱因，提供“延迟满足30天法则”等防剁手策略。
+3. 【月度储蓄目标与 532 资产配比方案】：结合用户收入水平，定制 50%必要开支、30%品质生活、20%储蓄投资的合理配比。
+4. 【财务安全垫建设与现金流健康建议】：规划 3-6 个月紧急备用金，提供无痛存钱与信用卡分期解套方案。
+
+请在回复的最后，根据你的专业评估给出该财务状况的【AI共识打分】（1-5分），格式必须严格如下：
+[JIZHANG_SCORES]expenseCategorizationRigor:数字,impulseExpenseWarning:数字,savingsGoalFeasibility:数字,cashFlowHealthIndex:数字,budgetControlEffectiveness:数字[/JIZHANG_SCORES]
+注意：[JIZHANG_SCORES]...[/JIZHANG_SCORES] 必须是回复的最后一小行，里面的“数字”只能是1到5之间的正整数。** 领域进行了深度提示词工程优化与共识打分约束。
+2. **多风格预设切换**：提供专业干练、高情商说辞、幽默风趣、严谨学术（或写真照片、卡通动漫等多模态）风格的一键切换。
+3. **一键复制与卡片分享**：支持生成内容的快速复制，以及渲染结果的截图分享导出。
+4. **统一 SSO 额度管理**：接入 wuxian.xyz 共享登录凭证，支持每日免费额度计数与登录解锁。
+
+---
 
 ## 快速启动
 
@@ -47,85 +72,77 @@ cd ai-jizhang
 ```
 
 ### 2. 安装依赖
-项目强制使用 pnpm 作为包管理器：
+项目推荐使用 `pnpm` 作为包管理器：
 ```bash
 pnpm install
 ```
 
-### 3. 配置本地开发环境变量
-复制并修改环境变量配置文件：
+### 3. 配置环境变量
+复制并配置本地开发环境变量：
 ```bash
 cp .env.example .env
 ```
-根据微应用的功能类型，在 `.env` 中配置您的开发者密钥：
-- `DEEPSEEK_API_KEY`: 您的 DeepSeek 开发者 API 密钥（用于文本生成任务）
-- `DASHSCOPE_API_KEY`: 您的通义千问/通义万相开发者 API 密钥（用于多模态与生图任务）
+在 `.env` 中填入您的 API Key：
+- `DEEPSEEK_API_KEY`: 您的 DeepSeek 开发者 API Key（用于文本类微应用）
+- `DASHSCOPE_API_KEY`: 阿里 DashScope API Key（用于多模态生图微应用）
 
-### 4. 启动本地开发服务
+### 4. 启动本地开发
 ```bash
 pnpm dev
 ```
-启动成功后在浏览器访问控制台输出的地址即可。
+启动后在浏览器打开控制台提示的本地开发地址即可进行调试。
 
-### 5. 生产构建打包
-```bash
-pnpm build
-```
-打包后生成的 `dist` 目录即为纯静态网页资源，可直接上传部署。
+---
 
 ## 脚手架集成说明
 
-本模板由私有总控仓库 `ai.wuxian.xyz` 中的 `@wuxian/cli` 脚手架统一管理，支持以下批量运维操作：
-
-### 初始化或更新单个子项目
+本微应用由私有总控仓库 `ai.wuxian.xyz` 中的运维脚手架统一管理，支持通过 CLI 进行批量更新与配置维护：
 
 ```bash
-node bin/cli.js ai-jizhang
-```
+# 自动化发版与发布
+node bin/cli.js publish ai-jizhang
 
-脚手架将自动：
-1. 读取子仓库的 `README.md` 首行作为 Prompt 主题。
-2. 注入 Vue 3 静态页面结构及标准配置文件。
-3. 保留原有的 `.git` 配置与 `README.md`，不覆盖个性化内容。
-
-### 批量同步所有子项目
-
-```bash
-node bin/cli.js all
-```
-
-将模板的最新变更（如 SSO 逻辑、额度控制）一键同步至全部 31 个子项目。
-
-### Agent 配置维护接口
-
-```bash
-# 读取子项目配置
+# 查看当前微应用配置
 node bin/cli.js get ai-jizhang
 
-# 写入/更新配置（支持热更新 prompt、model、title、temperature 等）
-node bin/cli.js set ai-jizhang prompt "你是一个结合注册理财规划师（CFP）、精益个人财务管家以及家庭资产配置专家的智能记账理财顾问..."
+# 动态热更新提示词或模型映射
+node bin/cli.js set ai-jizhang prompt "你是一位专业理财规划师、注册会计师兼个人财务健康顾问。你需要针对用户提供的月度收支明细、消费习惯、攒钱目标或财务焦虑，为用户生成一份客观、严谨、具可操作性的【个人财务记账与消费分析指导报告】。内容必须包含以下 4 个标准模块：
+1. 【收支结构诊断与隐形开支排查】：梳理用户固定开支与弹性开支占比，精准识别餐饮、外卖、冲动购物等隐形财务黑洞。
+2. 【冲动消费预警与心理防线重构】：分析诱发非必要消费的心理诱因，提供“延迟满足30天法则”等防剁手策略。
+3. 【月度储蓄目标与 532 资产配比方案】：结合用户收入水平，定制 50%必要开支、30%品质生活、20%储蓄投资的合理配比。
+4. 【财务安全垫建设与现金流健康建议】：规划 3-6 个月紧急备用金，提供无痛存钱与信用卡分期解套方案。
+
+请在回复的最后，根据你的专业评估给出该财务状况的【AI共识打分】（1-5分），格式必须严格如下：
+[JIZHANG_SCORES]expenseCategorizationRigor:数字,impulseExpenseWarning:数字,savingsGoalFeasibility:数字,cashFlowHealthIndex:数字,budgetControlEffectiveness:数字[/JIZHANG_SCORES]
+注意：[JIZHANG_SCORES]...[/JIZHANG_SCORES] 必须是回复的最后一小行，里面的“数字”只能是1到5之间的正整数。"
 node bin/cli.js set ai-jizhang model deepseek-chat
 ```
 
-## 联系方式
+---
 
-- GitHub Issues: [提交反馈](https://github.com/WT-Agent/ai-jizhang/issues)
-- 邮箱: us@wuxian.xyz
+## 联系我们与打赏支持
 
-## 打赏支持
-
-如果本项目对您有帮助，欢迎请作者喝杯咖啡。您的支持是持续维护与更新的动力。
+如果本项目对您的工作或学习有所帮助，欢迎扫码请团队喝杯咖啡，支持我们的开源维护！
 
 <div align="center">
 
 **微信支付** | **支付宝**
 :---:|:---:
-<img src="./asset/tenpay.png" width="200" alt="微信支付"> | <img src="./asset/alipay.png" width="200" alt="支付宝">
+<img src="./asset/tenpay.png" width="180" alt="微信支付"> | <img src="./asset/alipay.png" width="180" alt="支付宝">
 
 </div>
 
+---
+
+- **官方网站**: [https://jizhang.wuxian.xyz](https://jizhang.wuxian.xyz)
+- **GitHub Issues**: [提交反馈](https://github.com/WT-Agent/ai-jizhang/issues)
+- **反馈邮箱**: us@wuxian.xyz
+- **官方主页**: [ai.wuxian.xyz](https://ai.wuxian.xyz)
+
+---
+
 ## 版权与许可
 
-本项目基于 MIT License 开源协议。
+本项目基于 **MIT License** 开源协议。
 
-Copyright (c) 2026. All rights reserved.
+Copyright (c) 2026 [WangTeng.Tech](https://ai.wuxian.xyz). All rights reserved.
